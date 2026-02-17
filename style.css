@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to right, darkblue, blue, #50c878);
+    color: white;
+    /* Ensure text is readable on dark/colored background */
+    font-family: 'Inter', sans-serif;
+    /* Matching the font usage in HTML */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+a {
+    color: #e0e0e0;
+    /* Lighter color for links on blue background */
+}
