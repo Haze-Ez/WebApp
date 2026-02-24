@@ -1,0 +1,38 @@
+Implementation of top-down parser
+Please provide the derivation rules!
+A The derivation rules should be of the following form:: A->aS
+If there are multiple rules, separate them with enter!
+After specifying all the rules, I am waiting for the end keyword!
+S->T+S S->T T->a T->b end
+
+Thank you!
+
+Please provide the task to be solved!
+b+a
+This is on the left side: S S T T
+This is on the right side: T+S T a b
+This is the task to be solved: b+a
+S alternatives: S1 = T+S. S2 = T.
+T alternatives: T1 = a. T2 = b.
+
+Derivation:
+
+(q,1,#,S) (initial)
+(q,1,S1,T+S) (S extension)
+(q,1,S1T1,a+S) (T extension)
+(b,1,S1T1,a+S) (unsuccessful input matching))
+(q,1,S1T2,b+S) (backtrack in extension)
+(q,2,S1T2b,+S) (successful input matching)
+(q,3,S1T2b+,S) (successful input matching)
+(q,3,S1T2b+S1,T+S) (S extension)
+
+(q,3,S1T2b+S1T1,a+S) (T extension)
+(q,4,S1T2b+S1T1a,+S) (successful input matching)
+(b,4,S1T2b+S1T1a,+S) (unsuccessful input matching)
+(b,3,S1T2b+S1T1,a+S) (backtrack in input)
+(q,3,S1T2b+S1T2,b+S) (backtrack in the extension)
+(b,3,S1T2b+S1,T+S) (backtrack in the extension)
+(q,3,S1T2b+S2,T) (backtrack in the extension)
+(q,3,S1T2b+S2T1,a) (T extension)
+(q,4,S1T2b+S2T1a,#) (uccessful input matching)
+(t,4,S1T2b+S2T1a,#) (successful analysis!)
