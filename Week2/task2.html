@@ -26,6 +26,12 @@
             because it works.</p>
         <p>Lesson from the ice: Find someone whose call you’d recognize in a storm. Bring them your best pebble. And
             when winter hits, stand your ground together.</p>
+        
+        <h3>Watch: The Romantic Lives of Penguins</h3>  
+        <p><em>Click the play to watch the video or click the image below to be redirected to the video.</em></p>
+    
+            
+        <div class="media" style="display: flex; margin: 20px; gap: 20px; justify-content: center;">  
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Azra2UVOwao?si=3SM4SzQ12q039eUS"
                 title="YouTube video player" frameborder="0"
@@ -34,9 +40,21 @@
 
         </div>
 
+        <div class="image">
+            <img id="penguinImage" src="penguins.jpg" alt="Emperor Penguin"
+                width="500" height="315">
+        </div>
+
 
     </article>
 
 </body>
+
+<script>
+    const penguinImage = document.getElementById('penguinImage');
+    penguinImage.addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=Azra2UVOwao', '_blank');
+    });
+</script>
 
 </html>
