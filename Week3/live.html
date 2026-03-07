@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <article id="penguinArticle">
+            <div class="articleHeader">
+                <h2>A Penguin’s Guide to Romance</h2>
+            </div>
+            <div class="article">
+                <p>If you want to understand loyalty, patience, and dramatic gestures, don’t study humans. Study
+                    penguins.</p>
+                <p>Take the majestic Emperor penguin. Romance in Antarctica isn’t about candlelight dinners. It’s about
+                    surviving -40°C winds together. Courtship begins with a call — a unique vocal signature that says,
+                    “Out of
+                    the entire frozen continent, I choose you.” If that’s not commitment, what is?</p>
+                <p>Then comes the pebble proposal. In species like the Adélie penguin, males search for the smoothest,
+                    most
+                    perfect stone they can find. No diamond rings. Just a rock. But not just any rock — the rock. If she
+                    accepts
+                    it, they begin building a nest together. Romance, penguin-style, is practical: “Let’s construct a
+                    future.”
+                </p>
+                <p>And here’s the real flex — shared responsibility. When the female lays the egg, the male Emperor
+                    penguin
+                    balances it on his feet for weeks without eating, shielding it from lethal cold. No complaints. No
+                    “I’m
+                    tired.” Just silent endurance. That’s devotion.</p>
+                <p>Penguin love isn’t flashy. It’s consistent. It’s showing up in blizzards. It’s recognizing each
+                    other’s voice
+                    in a colony of thousands. It’s choosing the same partner season after season — not because it’s
+                    easy, but
+                    because it works.</p>
+                <p>Lesson from the ice: Find someone whose call you’d recognize in a storm. Bring them your best pebble.
+                    And
+                    when winter hits, stand your ground together.</p>
+            </div>
+        </article>
+
+
+        <div class="media">
+            <div class="watch-header">
+                <h3 id="mediaHeader" width="100%">Watch: The Romantic Lives of Penguins</h3>
+            </div>
+            <div>
+                <p id="mediaText" width="100%"><em>Click the play to watch the video or click the image below to be
+                        redirected to the video.</em></p>
+            </div>
+            <iframe id="penguinVideo" src="https://www.youtube.com/embed/Azra2UVOwao?si=3SM4SzQ12q039eUS"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <img id="penguinImage" src="penguins.jpg" alt="Emperor Penguin">
+
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <h2 style="text-align: center; color: white;">Penguin Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=500" alt="Penguin 1">
+            <img src="https://images.unsplash.com/photo-1600326145377-bcccb9a9daf2?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penguin 2">
+            <img src="https://images.unsplash.com/photo-1595792463990-07008351a4fb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penguin 3">
+            <img src="https://images.unsplash.com/photo-1551415923-a2297c7fda79?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penguin 4">
+            <img src="https://images.unsplash.com/photo-1619323424567-4d7a36c8bf42?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penguin 5">
+            <img src="https://images.unsplash.com/photo-1528035616016-47b960a7fac4?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penguin 6">
+        </div>
+    </div>
+
+    <footer style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ccc;">
+        <a href="https://penguin-seven-chi.vercel.app/" target="_blank" rel="noopener noreferrer">Live website</a>
+    </footer>
+
+
+</body>
+
+<script>
+    const penguinImage = document.getElementById('penguinImage');
+    penguinImage.addEventListener('click', function () {
+        window.open('https://www.youtube.com/watch?v=Azra2UVOwao', '_blank');
+    });
+</script>
+
+</html>
